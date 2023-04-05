@@ -1,0 +1,85 @@
+
+.footer{
+    flex-shrink: 0;
+}
+.footer__wrap{
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.footer__title{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+color: #656566;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.footer__item{
+    margin-bottom: 10px;
+}
+
+/* about */
+.footer__about{
+    width: 200px;
+    margin-right: 95px;
+}
+/* menu */
+
+.footer__menu-wrap{
+    display: flex;
+    width: 408px;
+    justify-content: space-between;
+}
+
+
+
+/* contacts */
+.footer__contacts{
+    text-align: right;
+    width: 440px;
+}
+
+.footer-socails{
+    display: flex;
+    justify-content: end;
+
+}
+
+.footer__pic{
+    width: 16px;
+    margin-left: 14px;
+}
+
+.footer__adress{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* privacy-policy */
+.privacy-policy{
+    font-family: 'Montserrat-Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+text-align: right;
+margin-bottom: 20px;
+}
+.privacy-policy__trademark{
+    margin-bottom: 5px;
+}
+.privacy-policy__link{
+    text-decoration-line: underline;
+}
+
+.footer__contacts__item{
+    margin-bottom: 21px;
+}
