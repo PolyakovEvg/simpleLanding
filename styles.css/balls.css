@@ -2,6 +2,7 @@
   position: fixed;
   z-index: -1;
 }
+
 .ball-purple {
   width: 60px;
   height: 60px;
@@ -25,7 +26,6 @@
   height: 259px;
   left: 602px;
   top: -154px;
-
   background: #833ab4;
   opacity: 0.5;
   filter: blur(196px);
@@ -37,15 +37,13 @@
   left: 520px;
   top: 88px;
   border-radius: 50%;
-
   background: radial-gradient(
-      64% 64% at 27.25% 26.5%,
-      rgba(255, 208, 208, 0.536) 0%,
-      rgba(212, 93, 93, 0.264) 59.67%,
-      rgba(167, 49, 49, 0.248) 78.59%,
-      rgba(130, 25, 25, 0.248) 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.536) 0%,
+    rgba(212, 93, 93, 0.264) 59.67%,
+    rgba(167, 49, 49, 0.248) 78.59%,
+    rgba(130, 25, 25, 0.248) 100%
+  );
   box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
   backdrop-filter: blur(2px);
 }
@@ -67,16 +65,47 @@
   left: 853px;
   top: 553px;
   border-radius: 50%;
-
   background: radial-gradient(
-      64% 64% at 27.25% 26.5%,
-      rgba(255, 208, 208, 0.48) 0%,
-      rgba(212, 93, 93, 0.248) 59.67%,
-      rgba(167, 49, 49, 0.264) 78.59%,
-      rgba(130, 25, 25, 0.232) 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.48) 0%,
+    rgba(212, 93, 93, 0.248) 59.67%,
+    rgba(167, 49, 49, 0.264) 78.59%,
+    rgba(130, 25, 25, 0.232) 100%
+  );
   box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
   filter: blur(2.5px);
   backdrop-filter: blur(2px);
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .ball-red-little {
+    display: none;
+  }
+
+  .ball-purple-light {
+    left: 258px;
+    top: 107px;
+  }
+
+  .ball-red-light {
+    left: -55px;
+    top: 241px;
+    opacity: 0.5;
+  }
+
+  .ball-red {
+    width: 55px;
+    height: 55px;
+    left: 35px;
+    top: 490px;
+    filter: blur(10px);
+  }
+
+  .ball-purple {
+    width: 45px;
+    height: 45px;
+    left: 280px;
+    top: 310px;
+    filter: blur(10px);
+  }
 }

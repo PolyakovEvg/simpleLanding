@@ -76,7 +76,7 @@ img{
 
 
 body{
-    width: 1140px;
+    max-width: 1140px;
     height: 100vh;
     margin: 0 auto;
     font-family: 'Inter';
@@ -101,8 +101,10 @@ button{
     flex-direction: column;
     height: 100%;
 }
-@media screen and (min-width: 320px) and (max-width: 480px){
+
+@media screen and (max-width : 480px) and (min-width : 320px) {
     body{
-        min-width: 320px;
-    }
+        width: 100%;
+        margin: 0 auto;
+    };
 }

@@ -1,85 +1,193 @@
-
-.footer{
-    flex-shrink: 0;
+/* GENERAL START */
+.footer {
+  flex-shrink: 0;
 }
-.footer__wrap{
-    margin-bottom: 24px;
+.footer__wrap {
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.footer__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #656566;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__link_small {
+  display: none;
+}
+/* GENERAL END */
+
+/* ABOUT START */
+.footer__about {
+  width: 200px;
+  margin-right: 95px;
+}
+/* ABOUT END */
+
+/* MENU START */
+.footer__menu-wrap {
+  display: flex;
+  width: 408px;
+  justify-content: flex-start;
+}
+.footer__list {
+  margin-right: 48px;
+}
+.footer__list:last-child {
+  margin-right: 0px;
+}
+/* MENU END */
+
+/* CONTACTS START*/
+.footer__contacts {
+  text-align: right;
+  width: 440px;
+}
+
+.footer__contacts__item {
+  margin-bottom: 21px;
+}
+
+.footer-socails {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__pic {
+  width: 16px;
+  margin-left: 14px;
+}
+
+.footer__adress {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* CONTACTS END */
+
+/*  PRIVACY-POLICY START */
+.privacy-policy {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.privacy-policy__trademark {
+  margin-bottom: 5px;
+}
+.privacy-policy__link {
+  text-decoration-line: underline;
+}
+/*  PRIVACY-POLICY END */
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  /* GENETAl START */
+  .footer {
+    background-color: #0e1014;
+  }
+  .footer__wrap {
+    margin-bottom: 50px;
     display: flex;
-}
+    flex-direction: column;
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .footer__link_small {
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+  }
 
-.footer__title{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 17px;
-color: #656566;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-margin-bottom: 20px;
-}
+  .footer__title {
+    margin: 30px 0px 20px 0px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .footer__link_changeble {
+    display: none;
+  }
+  /* GENERAL END */
 
-.footer__item{
-    margin-bottom: 10px;
-}
+  /* CONTACTS START */
+  .footer__contacts {
+    width: 100%;
+    text-align: left;
+  }
 
-/* about */
-.footer__about{
-    width: 200px;
-    margin-right: 95px;
-}
-/* menu */
-
-.footer__menu-wrap{
+  .footer-socails {
     display: flex;
-    width: 408px;
-    justify-content: space-between;
-}
-
-
-
-/* contacts */
-.footer__contacts{
-    text-align: right;
-    width: 440px;
-}
-
-.footer-socails{
-    display: flex;
-    justify-content: end;
-
-}
-
-.footer__pic{
-    width: 16px;
-    margin-left: 14px;
-}
-
-.footer__adress{
-    font-family: 'Inter';
+    justify-content: flex-start;
+  }
+  .footer__contacts__item {
+    margin-bottom: 11px;
+  }
+  .footer__contacts__phone {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .footer__adress {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-}
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .footer__pic {
+    margin-left: 0;
+    margin-right: 14px;
+    width: 20px;
+  }
+  /* CONTACTS END */
 
-/* privacy-policy */
-.privacy-policy{
-    font-family: 'Montserrat-Regular';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-text-align: right;
-margin-bottom: 20px;
-}
-.privacy-policy__trademark{
-    margin-bottom: 5px;
-}
-.privacy-policy__link{
-    text-decoration-line: underline;
-}
+  /* ABOUT START */
+  .footer__about {
+    width: 100%;
+  }
+  /* ABOUT END*/
 
-.footer__contacts__item{
-    margin-bottom: 21px;
+  /* MENU START */
+  .footer__menu-wrap {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .footer__list {
+    margin-right: 48px;
+  }
+  .footer__list:last-child {
+    margin-right: 0px;
+  }
+  /* MENU END */
+
+  /* PRIVACY POLICY START */
+  .privacy-policy {
+    font-family: "Montserrat-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    padding: 0px 60px 60px 15px;
+    margin-bottom: 0;
+  }
+  /* PRIVACY POLICY END */
 }

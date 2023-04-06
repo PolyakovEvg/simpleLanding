@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
     <link rel="stylesheet" href="index.css" />
+    <script src="./scripts/script.js" type="text/javascript"></script>
     <title>Welbet</title>
   </head>
   <body>
     <div class="container">
     <header class="header">
       <div class="header__wrapper">
+        <div class="header__menu_small" id="headerMenu">
+          <span></span>
+        </div>
         <div class="header__logo">
           <a href="/" class="header__logo__link">
             <img src="./imgs/logo.svg" alt="logo" class="header__logo-pic" />
@@ -96,11 +100,14 @@
 
           <div class="content__gift-widgets">
             <h3 class="content__gift-title">ВИДЖЕТЫ</h3>
+            <h3 class="content__gift-title_small">30 виджетов</h3>
             <p class="content__gift-description">30 готовых решений</p>
           </div>
+          
 
           <div class="content__gift-dashbord">
             <h3 class="content__gift-title">DASHBOARD</h3>
+            <h3 class="content__gift-title_small">DASHBOARD</h3>
             <p class="content__gift-description">
               с показателями вашего бизнеса
             </p>
@@ -108,11 +115,13 @@
 
           <div class="content__gift-audit">
             <h3 class="content__gift-title">SKYPE АУДИТ</h3>
+            <h3 class="content__gift-title_small">SKYPE АУДИТ</h3>
             <p class="content__gift-description">отдела продаж и CRM системы</p>
           </div>
 
           <div class="content__gift-CRM">
-            <div class="content__gift-title">35 ДНЕЙ</div>
+            <h3 class="content__gift-title">35 ДНЕЙ</h3>
+            <h3 class="content__gift-title_small">месяц AMOCRM</h3>
             <div class="content__gift-description">использования CRM</div>
           </div>
           <button class="content__gift-button" type="button">
@@ -161,7 +170,8 @@
                 <a href="#!" class="footer__link"> Кейсы </a>
               </li>
               <li class="footer__item">
-                <a href="#!" class="footer__link"> Благодарственные письма </a>
+                <a href="#!" class="footer__link footer__link_changeble"> Благодарственные письма </a>
+                <a href="#!" class="footer__link footer__link_small">Благодарность клиентов</a>
               </li>
               <li class="footer__item">
                 <a href="#!" class="footer__link"> Сертификаты </a>
