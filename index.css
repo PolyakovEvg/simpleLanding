@@ -1,9 +1,7 @@
-@import url('./styles.css/header.css');
-@import url('./styles.css/content.css');
-@import url('./styles.css/balls.css');
-@import url('./styles.css/footer.css');
-
-
+@import url('./styles/header.css');
+@import url('./styles/content.css');
+@import url('./styles/balls.css');
+@import url('./styles/footer.css');
 
 @font-face {
     font-family: 'Inter';
